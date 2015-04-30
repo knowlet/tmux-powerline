@@ -2,7 +2,11 @@
 
 # The update period in seconds.
 update_period=600
-
+# Your location. Find a code that works for you:
+# 1. Go to Yahoo weather http://weather.yahoo.com/
+# 2. Find the weather for you location
+# 3. Copy the last numbers in that URL. e.g. "http://weather.yahoo.com/united-states/california/newport-beach-12796587/" has the numbers "12796587"
+TMUX_POWERLINE_SEG_WEATHER_LOCATION=""
 TMUX_POWERLINE_SEG_WEATHER_DATA_PROVIDER_DEFAULT="yahoo"
 TMUX_POWERLINE_SEG_WEATHER_UNIT_DEFAULT="c"
 TMUX_POWERLINE_SEG_WEATHER_UPDATE_PERIOD_DEFAULT="600"
@@ -31,11 +35,6 @@ export TMUX_POWERLINE_SEG_WEATHER_GREP="${TMUX_POWERLINE_SEG_WEATHER_GREP_DEFAUL
 # Name of GNU "$gnused" binary if in PATH, or path to it.
 export TMUX_POWERLINE_SEG_WEATHER_SED="${TMUX_POWERLINE_SEG_WEATHER_SED_DEFAULT}"
 
-# Your location. Find a code that works for you:
-# 1. Go to Yahoo weather http://weather.yahoo.com/
-# 2. Find the weather for you location
-# 3. Copy the last numbers in that URL. e.g. "http://weather.yahoo.com/united-states/california/newport-beach-12796587/" has the numbers "12796587"
-export TMUX_POWERLINE_SEG_WEATHER_LOCATION=""
 EORC
 	echo "$rccontents"
 }
